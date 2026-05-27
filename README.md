@@ -60,7 +60,7 @@ after pulling the main repository.
 
 ## Dependabot Updates
 
-Dependabot is configured to check git submodules hourly:
+Dependabot is configured to check git submodules daily:
 
 ```yaml
 version: 2
@@ -68,7 +68,7 @@ updates:
   - package-ecosystem: "gitsubmodule"
     directory: "/"
     schedule:
-      interval: "hourly"
+      interval: "daily"
 ```
 
 When a submodule has a newer commit available, Dependabot should open a pull
