@@ -17,6 +17,56 @@ If you already cloned the repository without submodules, initialize them with:
 git submodule update --init --recursive
 ```
 
+## Local Setup and Startup
+
+Prepare each module according to its own README before starting everything:
+
+```bash
+# B1
+cd B1
+npm install
+
+# B2
+cd ../B2
+python3 -m venv .venv
+source .venv/bin/activate
+pip install fastapi "uvicorn[standard]" httpx pydantic
+deactivate
+
+# B3
+cd ../B3
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+deactivate
+
+# B4
+cd ../B4/autograder_api
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+cp .env.example .env
+deactivate
+```
+
+Then start all modules from the repository root:
+
+```bash
+./start_all.sh
+```
+
+The startup script only starts services. It does not install dependencies or
+create virtual environments. Logs are written to `logs/`.
+
+Default local URLs:
+
+```text
+B1 frontend: http://127.0.0.1:5173
+B2 service:  http://127.0.0.1:8002/docs
+B3 service:  http://127.0.0.1:8003/docs
+B4 API:      http://127.0.0.1:8000/docs
+```
+
 ## How Submodules Work Here
 
 Each submodule is pinned by the main repository to a specific commit. Even
