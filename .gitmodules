@@ -1,12 +1,16 @@
 [submodule "B1"]
 	path = B1
 	url = https://github.com/Lipgfi/AutoGrader.git
+	branch = main
 [submodule "B2"]
 	path = B2
 	url = https://github.com/pht-123/autograder-b2-module.git
+	branch = main
 [submodule "B3"]
 	path = B3
 	url = https://github.com/Annsher-whhr/AutoGrader-B3
+	branch = main
 [submodule "B4"]
 	path = B4
 	url = https://github.com/Foggyforest114514/AutoGrader-B4
+	branch = main
