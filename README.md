@@ -9,6 +9,7 @@ repositories:
 
 ```bash
 git clone --recurse-submodules <repo-url>
+# TEST PR
 ```
 
 If you already cloned the repository without submodules, initialize them with:
