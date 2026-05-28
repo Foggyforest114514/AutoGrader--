@@ -1,0 +1,31 @@
+# Runtime logs from top-level scripts
+logs/
+*.log
+
+# Python caches and virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+env/
+
+# Node dependencies and build output
+node_modules/
+dist/
+dist-ssr/
+.vite/
+coverage/
+
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# Editor and OS files
+.DS_Store
+.idea/
+.vscode/
