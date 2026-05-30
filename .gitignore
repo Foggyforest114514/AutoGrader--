@@ -29,3 +29,6 @@ coverage/
 .DS_Store
 .idea/
 .vscode/
+
+# Weekly Report for B4
+/weekly_report/
