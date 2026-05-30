@@ -1,6 +1,6 @@
 [submodule "B1"]
 	path = B1
-	url = https://github.com/Lipgfi/AutoGrader.git
+	url = https://github.com/Lipgfi/AutoGrader-B1.git
 	branch = main
 [submodule "B2"]
 	path = B2
