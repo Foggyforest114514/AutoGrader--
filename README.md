@@ -119,3 +119,67 @@ git submodule update --init --recursive
 
 If a merged pull request updated submodule pointers, this command moves your
 local submodule checkouts to the commits recorded by the main repository.
+
+## Module Code Statistics
+
+Generated on 2026-05-31 with:
+
+```bash
+for d in ./*/ ; do (cd "$d" && echo "$d" && cloc --vcs git); done;
+```
+
+### Summary
+
+| Module | Files | Blank Lines | Comment Lines | Code Lines |
+| --- | ---: | ---: | ---: | ---: |
+| B1 | 75 | 2,064 | 330 | 18,907 |
+| B2 | 77 | 352 | 79 | 1,069 |
+| B3 | 31 | 764 | 362 | 6,504 |
+| B4 | 44 | 1,003 | 14 | 6,113 |
+| **Total** | **227** | **4,183** | **785** | **32,593** |
+
+### B1
+
+| Language | Files | Blank Lines | Comment Lines | Code Lines |
+| --- | ---: | ---: | ---: | ---: |
+| Vuejs Component | 24 | 1,684 | 149 | 12,778 |
+| JSON | 4 | 2 | 0 | 3,130 |
+| TypeScript | 31 | 247 | 155 | 2,385 |
+| CSS | 1 | 58 | 26 | 298 |
+| Markdown | 2 | 66 | 0 | 220 |
+| Text | 10 | 1 | 0 | 55 |
+| Bourne Shell | 1 | 3 | 0 | 18 |
+| HTML | 1 | 0 | 0 | 13 |
+| JavaScript | 1 | 3 | 0 | 10 |
+
+### B2
+
+| Language | Files | Blank Lines | Comment Lines | Code Lines |
+| --- | ---: | ---: | ---: | ---: |
+| Python | 53 | 266 | 79 | 851 |
+| Markdown | 24 | 86 | 0 | 218 |
+
+### B3
+
+| Language | Files | Blank Lines | Comment Lines | Code Lines |
+| --- | ---: | ---: | ---: | ---: |
+| JSON | 3 | 0 | 0 | 3,236 |
+| Python | 20 | 578 | 362 | 2,750 |
+| Markdown | 2 | 142 | 0 | 365 |
+| Text | 2 | 23 | 0 | 84 |
+| INI | 2 | 9 | 0 | 33 |
+| Dockerfile | 1 | 4 | 0 | 18 |
+| Mako | 1 | 8 | 0 | 18 |
+
+### B4
+
+| Language | Files | Blank Lines | Comment Lines | Code Lines |
+| --- | ---: | ---: | ---: | ---: |
+| Python | 36 | 871 | 14 | 5,499 |
+| Markdown | 4 | 119 | 0 | 521 |
+| DOS Batch | 2 | 8 | 0 | 46 |
+| Bourne Shell | 1 | 5 | 0 | 32 |
+| Text | 1 | 0 | 0 | 15 |
+
+`logs/` and `weekly_report_B4/` were also visited by the command, but did not
+produce Git-tracked code statistics. They are not application modules.
