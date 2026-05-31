@@ -217,4 +217,3 @@ for d in ./*/ ; do (cd "$d" && echo "$d" && cloc --vcs git); done;
 
 </details>
 
-`logs/` 和 `weekly_report_B4/` 也會被統計命令遍歷，但它們不是應用模塊，因此未納入上表。
