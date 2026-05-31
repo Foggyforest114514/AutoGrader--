@@ -1,4 +1,4 @@
-# AutoGrader 聯調倉庫
+#  SCU-2026春-杨凯-软件项目管理課程項目 AutoGrader(Beta) 聯調倉庫
 
 本倉庫用於整合 AutoGrader 課程項目的四個子模塊，統一管理版本、啟動腳本和聯調測試。四個模塊分別存放在獨立的 Git 倉庫中，本倉庫通過 Git submodule 固定每個模塊使用的版本。
 
